@@ -1,0 +1,26 @@
+body{
+    margin: 2%;
+}
+.nav .nav-item{
+    padding:0 3%;
+} 
+.jumbotron h1{
+    font-size: 50px;
+}
+.jumbotron{
+    
+    text-align: center;
+    background-color: transparent;
+}
+.jumbotron .btn{
+    padding: 20px 20px;
+}
+.centro{
+    text-align: center;
+}
+.centro h1{
+    text-align: left;
+}
+.centro p{
+    text-align: left;
+}

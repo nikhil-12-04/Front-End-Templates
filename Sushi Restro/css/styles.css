@@ -1,0 +1,36 @@
+video{
+    top: 50%;
+    left: 50%;
+    margin-top: -50%;
+    margin-left: -50%;
+    z-index: 1;
+    position: fixed;
+}
+div{
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    width: 700px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1{
+    color: rgb(40,40,40);
+    font-size: 50px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    background-color: yellow;
+}
+p{
+    color: white;
+    background-color: grey;
+    margin:30px;
+}
+a{
+    border: solid 4px rgb(250,60,100);
+    padding: 10px;
+    text-decoration: none;
+    font-size: 24px;
+    color: rgb(250,60,100);
+}

@@ -1,0 +1,41 @@
+body{
+    background-color: #F5BCBA;
+    max-height: 100%;
+    font-family: 'Crimson Text', serif;
+    background-size:cover;
+}
+#userinput{
+    width: 40%;
+    margin: 0 auto;
+    margin-top : 2%;
+    display: inline;
+    font-size: 24px;
+}
+.separate{
+    margin: 2%;
+}
+#add{
+    font-size: 18px;
+}
+#remove{
+    font-size: 18px;
+}
+.heading{
+    margin: 2%;
+}
+
+#list{
+    margin: 1%;
+    list-style-type: none;
+}
+.todoarea{
+    width:50%;
+    height:50%;
+    margin: 0 auto;
+}
+.row{
+    padding-bottom: 1%;
+}
+.todoItem{
+    font-size: 24px;
+}

@@ -1,0 +1,56 @@
+body{
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+}
+nav a:hover{
+    color: #8a8c8a;
+}
+.center{
+    text-align: center;
+    margin-top: 12%;
+}
+.head{
+    color:#000;
+}
+.dropdown-toggle{
+    color: white;
+    text-decoration: none;
+}
+.dropdown-toggle:hover {
+    color: white;
+    text-decoration: none;
+}
+.google,.facebook{
+    padding: 3px;
+}
+.dropdown-menu{
+    width: 230px;
+    height:80px;
+}
+@media (max-width:768px){
+    .head{
+        background-color: #fff;
+    }
+    .back{
+        background-color: #fff;
+    }
+    .back1{
+        color: #fff;
+    }
+    
+    
+}
+
+
+@media (min-width:768px){
+     .head{
+        background-color: skyblue;
+    }
+    .back{
+        background-color: skyblue;
+    }
+    .back1{
+        color: #fff;
+    }
+}
