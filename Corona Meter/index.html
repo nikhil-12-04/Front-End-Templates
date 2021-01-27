@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>COVID-19 Tracker</title>
+  </head>
+
+
+  <body id="body"  class="bg-dark text-white" >  
+    <!-- Heading  -->
+    <div id="header"  class="container mx-auto text-center mt-2 text-white mb-5">
+        <h1>COVID-19 Tracker</h1>
+      
+            <div class="custom-control custom-switch ml-auto float-right ">
+                <input onclick="onClickedOnToggler()" type="checkbox" class="custom-control-input" id="customSwitch1" >
+                <label class="custom-control-label" for="customSwitch1">Light Mode</label>
+              </div>
+    </div>
+    <!-- Navs -->
+    <div class="container-fluid mb-5 ">
+
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a id="overall" class="nav-link text-white " href="#">Overall Cases</a>
+            </li>
+            <li class="nav-item">
+                <a id="by-country" class="nav-link text-white " href="#">Search by Country</a>
+              </li>
+             
+          </ul>
+        
+    </div>
+    <!-- Table To show Data when global -->
+    <div class="container">
+
+        <table id="table1" class="table table-hover table-dark">
+            <thead>
+              <tr id="table-header" >
+                
+                <th scope="col">Country Name</th>
+                <th scope="col">Total Cases</th>
+                <th scope="col">Total Recovered</th>
+                <th scope="col">Total Deaths</th>
+
+              </tr>
+              <tr>
+                
+                <th scope="col">Global</th>
+                <th scope="col">Total Cases</th>
+                <th scope="col">Total Recovered</th>
+                <th scope="col">Total Deaths</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="col">Country Name</th>
+                <th scope="col">Total Cases</th>
+                <th scope="col">Total Recovered</th>
+                <th scope="col">Total Deaths</th>
+              </tr>
+              <tr>
+                <th scope="col">Country Name</th>
+                <th scope="col">Total Cases</th>
+                <th scope="col">Total Recovered</th>
+                <th scope="col">Total Deaths</th>
+              </tr>
+              <tr>
+                <th scope="col">Country Name</th>
+                <th scope="col">Total Cases</th>
+                <th scope="col">Total Recovered</th>
+                <th scope="col">Total Deaths</th>
+              </tr>
+            </tbody>
+          </table>
+
+
+    </div>
+
+    
+    <!-- Search Box -->
+
+   <div class="container mx-auto search-box ">
+    <form>
+        <div class="form-row align-items-center">
+          <div class="col-sm-10 col-10 ">
+            <input type="text" class="form-control" id="inlineFormInputName" placeholder="Search Country...">
+        </div>
+        <div class="col-sm-2 col-2">
+            <button id="submit" type="submit" class="btn btn-light text-dark "><i class="fas fa-search"></i></button>
+        </div>
+        </div>
+       
+    </form>
+   </div>
+
+    <!-- Card to show data when searched -->
+
+    <div class="container ">
+        <div id="country-card" class="card bg-dark">
+            <div class="card-header text-center ">
+              Country Name
+            </div>
+            <div class="card-body">
+              <!-- Table  -->
+
+              <table id="table" class="table table-hover table-dark">
+                <tbody>
+                  <tr>
+                    <td>Total Cases </td>
+                    <td>00000000</td>
+                  </tr>
+                  <tr>
+                    <td>Total Recovered</td>
+                    <td>0000000</td>
+                  </tr>
+                  <tr>
+                    <td>Total Deaths</td>
+                    <td>0000000</td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+    </div>
+<!--      Footer-->
+          <footer class=" container mx-auto" >
+
+      <p class="text-center"> &copy;Copyright <span id="year"></span> COVID-19 TRACKER  
+      
+        <a href="#header"><span id="move" class="float-right text-white"> <i class="fas fa-arrow-circle-up"></i> Move To Top </span></a>
+      
+      </p>
+
+    </footer>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
